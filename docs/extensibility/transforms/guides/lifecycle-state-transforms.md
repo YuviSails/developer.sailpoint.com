@@ -108,7 +108,7 @@ Finally, lines 34-36 use the comparison operator greater than or equal to `gte`.
 
 ### Check whether end date is within 7 days
 
-Once you have ensured that the `end_date` is in fact in the past, the next step is to check whether the `end_date` is fewer than 7 days away, 7-25 days days away, or more than 25 days away, to determine their exact lifecycle states. Start by checking whether the `end_date` is fewer than 7 days away. You will again use `dateCompare`, `dateFormat`, and `dateMath` for this comparison.
+Once you have ensured that the `end_date` is in fact in the future, the next step is to check whether the `end_date` is fewer than 7 days away, 7-25 days days away, or more than 25 days away, to determine their exact lifecycle states. Start by checking whether the `end_date` is fewer than 7 days away. You will again use `dateCompare`, `dateFormat`, and `dateMath` for this comparison.
 
 On line 27, use the `dateMath` operation to add 7 days to the current date: `now+7d`. It pulls in the `end_date` the same way it did before, and it converts both dates to the `ISO8601` format for comparison.
 
